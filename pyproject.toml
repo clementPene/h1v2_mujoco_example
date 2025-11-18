@@ -1,0 +1,15 @@
+[project]
+name = "h1v2-mujoco-example"
+version = "0.1.0"
+description = "Exemple using MuJoCo for H1V2."
+requires-python = ">=3.10"
+
+# Liste ici les paquets Python dont ton script a besoin
+dependencies = [
+    "mujoco>=3.3.7",
+    "pygame>=2.6.1",
+    "unitree-sdk2py",
+]
+
+[tool.uv.sources]
+unitree-sdk2py = { git = "https://github.com/ComePerrot/unitree_sdk2_python.git", rev = "master" }
